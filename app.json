@@ -1,28 +1,28 @@
 {
   "expo": {
-    "name": "speech_emotion_recognition_mobile_app",
-    "slug": "speech_emotion_recognition_mobile_app",
+    "name": "serma",
+    "slug": "serma",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/serma-logo.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash-icon.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "image": "./assets/serma-logo.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#EA458E"
     },
     "ios": {
       "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "foregroundImage": "./assets/serma-logo.png",
+        "backgroundColor": "#EA458E"
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/serma-icon.png"
     }
   }
 }
