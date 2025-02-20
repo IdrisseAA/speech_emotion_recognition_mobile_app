@@ -43,10 +43,16 @@ export default class ApiService {
 
     static async getUserInfo(){
         const headers = await this.getHeaders();
-        const response = await axios.get(`${this.BASE_URL}/users/get-self`, {
-            headers: headers
-        });
-        return response.data;
+        try {
+            const response = await axios.get(
+                `${this.BASE_URL}/users/get-self`,
+                {headers: headers}
+            );
+            return response.data;
+        } catch (error) {
+            console.error("Error fetching user info:", error);
+            throw error; // Optional: rethrow the error for further handling
+        }
     }
 
     // Audio Recording Section
@@ -57,6 +63,7 @@ export default class ApiService {
             `${this.BASE_URL}/audio-recordings/add`,
             audioRecording,
             {headers: headers});
+
         console.log(response);
         return response.data;
     } catch (error) {
