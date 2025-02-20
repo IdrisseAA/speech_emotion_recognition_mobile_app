@@ -48,4 +48,21 @@ export default class ApiService {
         });
         return response.data;
     }
+
+    // Audio Recording Section
+    static async addAudioRecording(audioRecording) {
+    try {
+        const headers = await this.getHeaders(); // Get authorization headers
+        const response = await axios.post(
+            `${this.BASE_URL}/audio-recordings/add`,
+            audioRecording,
+            {headers: headers});
+        console.log(response);
+        return response.data;
+    } catch (error) {
+        console.error("Error adding audio recording:", error);
+        throw error; // Rethrow the error for handling in the calling function
+    }
+}
+
 }

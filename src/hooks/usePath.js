@@ -4,7 +4,7 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { SCREEN_WIDTH } from "../constants/ScreenDimensions";
 import { parse } from "react-native-redash";
 
-const NUM_TABS = 4;
+const NUM_TABS = 5;
 const SCALE = 0.7;
 const TAB_BAR_HEIGHT = 64;
 

@@ -1,14 +1,14 @@
 import React from "react";
-import { View, Text, StyleSheet } from "react-native";
-import { useForm } from "react-hook-form";
-import { useNavigation } from "@react-navigation/native";
+import {StyleSheet, Text, View} from "react-native";
+import {useForm} from "react-hook-form";
+import {useNavigation} from "@react-navigation/native";
 
 import CustomTextInput from "../components/CustomTextInput";
 import CustomButton from "../components/CustomButton";
 import WelcomeTitle from "../components/WelcomeTitle";
 
-import { Colors } from "../constants/Colors";
-import { Fonts } from "../constants/Fonts";
+import {Colors} from "../constants/Colors";
+import {Fonts} from "../constants/Fonts";
 
 
 export default function ForgotPasswordScreen(){

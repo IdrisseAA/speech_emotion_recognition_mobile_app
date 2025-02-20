@@ -28,6 +28,7 @@ export default function CustomInput({
                                         isIonIcon = false,
                                         isSimpleLineIcons = false,
                                         isMaterialIcons = false,
+                                        editable = true,
                                     }) {
 
     return (
@@ -50,7 +51,7 @@ export default function CustomInput({
                             style={styles.textInput}
                             secureTextEntry={secureTextEntry}
                             keyboardType={isNumeric ? "numeric" : keyboardType}
-
+                            editable={editable}
                         />
                         {showEyeTogglePart && ( // Show the eye icon only if secureTextEntry is true
                             <TouchableOpacity onPress={onPress}>

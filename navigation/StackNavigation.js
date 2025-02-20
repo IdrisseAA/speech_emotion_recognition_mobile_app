@@ -15,11 +15,11 @@ export default function StackNavigation() {
     return (
         <NavigationContainer>
             <Stack.Navigator screenOptions={{headerShown:false}} id="StackNav">
-                <Stack.Screen name="OnBoarding" component={OnBoardingScreen}/>
+                {/*<Stack.Screen name="OnBoarding" component={OnBoardingScreen}/>
                 <Stack.Screen name="LoginScreen" component={LoginScreen} />
                 <Stack.Screen name="SignupScreen" component={SignupScreen} />
                 <Stack.Screen name="ForgotPasswordScreen" component={ForgotPasswordScreen} />
-                <Stack.Screen name="ReNewPasswordScreen" component={ReNewPasswordScreen} />
+                <Stack.Screen name="ReNewPasswordScreen" component={ReNewPasswordScreen} /> */}
 
                 <Stack.Screen name="MainApp" component={BottomTabs} />
 

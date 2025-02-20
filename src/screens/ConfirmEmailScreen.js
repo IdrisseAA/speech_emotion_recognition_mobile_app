@@ -1,7 +1,7 @@
 import React from "react";
-import {View, Text, StyleSheet, Platform, KeyboardAvoidingView, ScrollView} from "react-native";
-import { useForm } from "react-hook-form";
-import { useNavigation } from "@react-navigation/native";
+import {KeyboardAvoidingView, Platform, ScrollView, StyleSheet, Text} from "react-native";
+import {useForm} from "react-hook-form";
+import {useNavigation} from "@react-navigation/native";
 
 import CustomTextInput from "../components/CustomTextInput";
 import CustomButton from "../components/CustomButton";
@@ -10,8 +10,8 @@ import WelcomeTitle from "../components/WelcomeTitle";
 import ApiService from "../service/ApiService";
 import StorageHelper from "../utils/StorageHelper";
 
-import { Fonts } from "../constants/Fonts";
-import { Colors } from "../constants/Colors";
+import {Fonts} from "../constants/Fonts";
+import {Colors} from "../constants/Colors";
 
 export default function ConfirmEmailScreen() {
     const {control, handleSubmit} = useForm();
